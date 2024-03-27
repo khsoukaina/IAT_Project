@@ -22,7 +22,6 @@ while not mdp_instance.is_terminal(state):
     action = policy_instance.select_action(state)
     new_state, reward = mdp_instance.execute(state, action)
     
-    # Mettez à jour l'état pour la prochaine itération
     state = new_state
 
 plt.ioff()  # Désactive le mode interactif
